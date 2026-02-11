@@ -1,0 +1,45 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function MostFrequentNumber(t){
+    
+    var maxCount = 0;
+    var nb = 0;
+     
+    for (var i =0 ; i < t.length; i++){
+        var count = 0;
+        for (var j = 0 ; j < t.length; j++){
+            if (t[i] === t[j]){
+                count = count + 1;
+            }
+        }
+        if (count > maxCount){
+            maxCount = count;
+            nb = t[i];
+        }
+    }
+    return nb;
+    
+}
+
+    
+    const t = [];
+    do {
+        var n = Number(prompt("Enter the first table size positive number): "));
+    } while (isNaN(n) || n <= 0);
+   
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    
+    var counts = MostFrequentNumber(t);
+    console.log("the table is : "+ t);
+    console.log("Most frequent number is : "+ counts);
+    
+    
+    
+  
+   
+   
