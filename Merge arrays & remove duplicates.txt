@@ -1,0 +1,71 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function flattenTable(t1,t2){
+    
+    var result = [];
+    var j = 0;
+    for (var i = 0; i < t1.length; i++) {
+        result[j] = t1[i];
+        j = j + 1;
+    }
+    
+    for (var i = 0; i < t2.length; i++) {
+        result[j] = t2[i];
+        j = j + 1;
+    }
+    return result ;
+   
+}
+    
+    function Remove(t){
+
+    const result = [];    
+    var k =0;
+
+    for (var i = 0; i < n; i++ ){
+        for (var j = 0; j < t.length; j++){
+            if ((t[i] === t[j]) && (i !== j)){
+                t[j] = "*" 
+            }
+        }
+    }
+
+    for (var i = 0; i < t.length ; i++){
+        if (t[i] !== "*"){
+                result[k] = t[i];
+                k = k + 1;
+            }
+    }
+    return result;
+}
+
+    
+
+    const t1 = [];
+    do {
+        var n = Number(prompt("Enter the first table size positive number): "));
+    } while (isNaN(n) || n <= 0);
+   
+    for (var i = 0; i < n; i++){
+        var nb1 = prompt("Enter item number  n " + (i + 1) + " : ");
+        t1[i] = nb1;
+    }
+    
+    const t2 = [];
+    do {
+        var m = Number(prompt("Enter the second table size positive number): "));
+    } while (isNaN(m) || m <= 0);
+    
+    for (var i = 0; i < m; i++){
+        var nb2 = prompt("Enter item number  n " + (i + 1) + " : ");
+        t2[i] = nb2;
+    }
+    
+    var t = flattenTable(t1,t2);
+    var tableau = Remove(t);
+    
+    console.log("the first table is : "+ t1);
+    console.log("the second table is : "+ t2);
+    console.log("the total table is : " +tableau);
