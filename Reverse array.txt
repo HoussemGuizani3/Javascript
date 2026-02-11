@@ -1,0 +1,32 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function reverse(t){
+
+    var result = [];
+    var j = 0;
+    for (var i = n-1 ; i >= 0; i-- ){
+        result[j] = t[i];
+        j = j + 1;
+    }
+    return result;
+}
+
+    const t = [];
+    do {
+    	var n = Number(prompt("Enter table size positive number):"));
+    } while (isNaN(n) || n < 0);
+    
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    
+   var t2 = reverse(t);
+   console.log("the original table is: ",t);
+   console.log("the reverse table is: ", t2);
+
+    
+   
+   
