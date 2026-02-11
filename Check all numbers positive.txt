@@ -1,0 +1,38 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function checkAllPositive(t){
+    
+    var i = 0;
+    var test = true;
+   for (var i = 0; i < n; i++) {
+        if (Number(t[i]) <= 0) {
+            test = false; 
+        }
+    }
+    return test;
+}
+
+    const t = [];
+    do {
+        var n = Number(prompt("Enter table size positive number): "));
+    } while (isNaN(n) || n < 0);
+   
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+
+    
+    var check = checkAllPositive(t);
+    if (check === true){
+        console.log("all numbers of table is positive");
+    }else {
+        console.log("the numbers of table positives and negative");
+    }
+    
+    
+  
+   
+   
