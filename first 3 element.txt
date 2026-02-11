@@ -1,0 +1,36 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function first3element(t,x){
+    
+    var result = [];
+    var j = 0;
+    for (var i = 0; i < x ; i++){
+      result[j] = t[i];
+      j = j + 1;
+    }
+    return result;
+}
+
+    const t = [];
+    do {
+        var n = Number(prompt("Enter table size positive number): "));
+    } while (isNaN(n) || n < 0);
+   
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    
+    do {
+        var x = Number(prompt("Please give me the number to stop  between 1 and " + n + ":"));
+    } while (x > n || x <= 0);
+    
+    var t2 = first3element(t,x);
+    console.log("the original table is: ",t);
+    console.log("the new table is: ", t2);
+    
+  
+   
+   
