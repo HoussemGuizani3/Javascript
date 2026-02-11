@@ -1,0 +1,33 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function WordLength(t){
+    
+    var result = [];
+    var j = 0;
+    for (var i = 0; i < n ; i++){
+       var nb = t[i].length;
+       result[j] = nb;
+       j = j + 1;
+    }
+     return result;
+}
+
+    const t = [];
+    do {
+    var n = Number(prompt("Enter table size positive number):"));
+    } while (isNaN(n) || n < 0);
+    
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    
+    var t2 = WordLength(t);
+    console.log("the original table is: ",t);
+    console.log("the word lengths of table is: ", t2);
+    
+  
+   
+   
