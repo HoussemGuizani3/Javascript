@@ -1,0 +1,36 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function CheckArray(t,x){
+
+    var test = false;
+    var i = 0;
+    while ((i < n) && (test === false)) {
+        if (Number(t[i]) === x) {
+            test = true;
+        }
+        i++;
+    }
+     return test;
+}
+
+    const t = [];
+    var n = Number(prompt("please give me the size of the table : "));
+    
+    var x = Number(prompt("please give me the number a searching: "));
+    
+    for (var i = 0; i < n; i++){
+        var nb = Number(prompt("Enter item number  n " + (i + 1) + " : "));
+        t[i] = nb;
+    }
+    
+    var testResult = CheckArray(t,x);
+    
+   if (testResult === true){
+        console.log("the number search : " + x + " exist");
+    }else{
+        console.log("the number search : " + x + " not exist");
+    }
+   
+   
