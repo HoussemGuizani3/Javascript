@@ -1,0 +1,37 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function Superior(t,x){
+    
+    var result = [];
+    var j = 0;
+    for (var i = 0; i < n ; i++){
+       if (Number(t[i]) < x){
+            result[j] = t[i];
+            j = j + 1;
+        }
+    }
+    return result;
+}
+
+    const t = [];
+    do {
+    	var n = Number(prompt("Enter table size positive number):"));
+    } while (isNaN(n) || n < 0);
+
+    var x = Number(prompt("please give me the number compare :"))
+    
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    
+
+    var t2 = Superior(t,x);
+    console.log("the original table is: ",t);
+    console.log("the new table is: ", t2);
+    
+  
+   
+   
