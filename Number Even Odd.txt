@@ -1,0 +1,52 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function EvenNumbers(t){
+    
+    var resultEven = [];
+    var j = 0;
+    for (var i = 0; i < n; i++) {
+        if (Number(t[i]) % 2 === 0){
+            resultEven[j] = t[i];
+            j = j+1;
+        }
+    }
+    return resultEven ;
+}
+    
+    function OddNumbers(t){
+        
+    var resultOdd = [];
+    var j = 0;
+    for (var i = 0; i < n; i++) {
+        if (Number(t[i]) % 2 !== 0){
+            resultOdd[j] = t[i];
+            j = j+1;
+        }
+    }
+    return resultOdd ;
+}
+    
+    const t = [];
+    do {
+        var n = Number(prompt("Enter table size positive number): "));
+    } while (isNaN(n) || n < 0);
+   
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+
+    
+    var t2 = EvenNumbers(t);
+    var t3 = OddNumbers(t);
+    console.log("the original table is : " +t);
+    console.log("the table of Even Numbers is : "+ t2);
+    console.log("the table of Odd Numbers is : "+ t3);
+    
+    
+    
+  
+   
+   
