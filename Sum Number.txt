@@ -1,0 +1,27 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function Sum(t){
+    
+    var s = 0;
+    for (var i = 0; i < n; i++ ){
+       var s = s + Number(t[i]);
+    }
+    return s;
+}
+
+    const t = [];
+    do {
+    	var n = Number(prompt("Enter table size positive number):"));
+    } while (isNaN(n) || n < 0);
+    
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    
+   var s = Sum(t);
+   console.log("The table is: ", t);
+   console.log("The Sum of all numbers is: ", s);
+   
