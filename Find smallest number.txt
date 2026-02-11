@@ -1,0 +1,31 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function minimum(t){
+
+    var min = Number(t[0]);
+    for (var i = 1; i < n; i++ ){
+        if (min > Number(t[i])){
+            min = t[i];
+        }
+    }
+    return min;
+}
+
+    const t = [];
+    var n = Number(prompt("please give me the size of the table : "));
+    
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    
+    
+   if (n > 0) {
+   	var min = minimum(t);
+  	console.log("The minimum in the table :", t, " is ", min);
+    } else {
+        console.log("The table is empty.");
+    }
+   
