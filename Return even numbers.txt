@@ -1,0 +1,32 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function evenNumbers(t){
+    const result = [];
+    var j = 0;
+    
+    for (var i = 0; i < n; i++ ){
+        if (Number(t[i]) % 2 === 0){
+            result[j] = t[i];
+            j = j+1;
+        }
+    }
+    return result;
+}
+
+    const t = [];
+    var n = Number(prompt("please give me the size of the table : "));
+    
+    for (var i = 0; i < n; i++){
+        var nb = Number(prompt("Enter item number  n " + (i + 1) + " : "));
+        t[i] = nb;
+    }
+    
+   if (n > 0) {
+  	var t2 = evenNumbers(t);
+    	console.log("the first table is: ",t);
+    	console.log("the second table is: ", t2);
+   }else {
+	console.log("The table is empty.")
+   }
