@@ -1,0 +1,35 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function longestWord(t){
+
+       var ch = t[0]; 
+    
+    for (var i = 1; i < n ; i++){
+        var max = ch.length;
+        var long = t[i].length;
+        if (max < long){
+            ch = t[i];
+        }
+    }
+    console.log(ch);
+     return ch;
+}
+
+    const t = [];
+	
+    	var n = Number(prompt("please give me the size of the table : "));
+    
+    for (var i = 0; i < n; i++){
+        var nb = prompt("Enter item number  n " + (i + 1) + " : ");
+        t[i] = nb;
+    }
+    if (t.length === 0){
+        console.log("the length of table is zero!");
+    }else {
+        var chaine = longestWord(t);
+        console.log("the long word is : " , chaine);
+    }
+   
+   
