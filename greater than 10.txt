@@ -1,0 +1,29 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function greater(t){
+    const result = [];
+    var j = 0;
+    
+    for (var i = 0; i < n; i++ ){
+        if (Number(t[i]) >= 10){
+            result[j] = t[i];
+            j = j+1;
+        }
+    }
+    return result;
+}
+
+    const t = [];
+    var n = Number(prompt("please give me the size of the table : "));
+    
+    for (var i = 0; i < n; i++){
+        var nb = Number(prompt("Enter item number  n " + (i + 1) + " : "));
+        t[i] = nb;
+    }
+    
+   var t2 = greater(t);
+   
+    console.log("the first table is: ",t);
+    console.log("the second table is: ", t2);
