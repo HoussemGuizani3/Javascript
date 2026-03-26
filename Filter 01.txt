@@ -10,6 +10,7 @@ const checkAge = (users) => {
     return item;
 };
 
+
 const users = [
     { name: "Alice", age: 25 },
     { name: "Bob", age: 35 },
