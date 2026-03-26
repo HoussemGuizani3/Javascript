@@ -1,0 +1,30 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+function MinT(t) {
+    var min = t[0];
+    for (var i = 1; i < t.length; i++) {
+        if (t[i] < min) {
+            min = t[i];
+        }
+    }
+    return min;
+}
+
+var taille = prompt("The size of the table? ");
+const t = [];
+
+for (var i = 0; i < taille; i++) {
+    var element = prompt("Enter item number  n " + (i + 1) + " : ");
+    t.push(Number(element)); 
+}
+
+if (t.length == 0) {
+    console.log("the length of table is zero!");
+} else {
+    var valeurMin = MinT(t);
+    console.log("Table :", t);
+    console.log("The minimum value is :", valeurMin);
+}
+
+console.log("Try programiz.pro");
