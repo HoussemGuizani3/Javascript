@@ -28,6 +28,8 @@ const users = [
   }
 ];
 
+
 const ActiveSub = users.filter(checkSub);
+
 console.log("Result :", ActiveSub);
 
