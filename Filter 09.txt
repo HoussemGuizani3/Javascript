@@ -2,6 +2,7 @@
 // Write, Edit and Run your Javascript code using JS Online Compiler
 // Filter completed orders
 
+
 const checkOrders = (orders) => {
     var item = false ;
     if (orders.status === "completed"){
@@ -10,11 +11,14 @@ const checkOrders = (orders) => {
     return item;    
 };
 
+
 const orders = [
  { id: 1, status: "pending" },
  { id: 2, status: "completed" },
  { id: 3, status: "completed" }
 ];
+
+
 
 const CompletedOrders = orders.filter(checkOrders);
 
