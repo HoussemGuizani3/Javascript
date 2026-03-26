@@ -1,0 +1,22 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Filter users older than 30
+
+const checkAge = (users) => {
+    var item= false 
+    if (users.age > 30) {
+        item= true
+    }
+    return item;
+};
+
+const users = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 35 },
+    { name: "Charlie", age: 32 }
+];
+
+const usersOlderThan30 = users.filter(checkAge);
+
+console.log("Results:", usersOlderThan30);
+
