@@ -30,4 +30,3 @@ if (t.length == 0) {
     console.log("the values" , x, "exists", a, "times");
 }
 
-console.log("Try programiz.pro");
