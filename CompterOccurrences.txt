@@ -1,0 +1,33 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+function Occurrences(t, x) {
+    var count = 0;
+    for (var i = 0; i < t.length; i++) {
+        if (Number(x) == t[i]) {
+            count = count + 1;
+        }
+    }
+    return count;
+}
+
+const n = prompt("The size of the table? ");
+const t = [];
+
+for (var i = 0; i < n; i++) {
+    var element = prompt("Enter item number n " + (i + 1) + ": ");
+    t.push(Number(element)); 
+}
+
+var x = prompt("Quelle valeur voulez-vous rechercher ?");
+var a;
+
+if (t.length == 0) {
+    console.log("the length of table is zero!");
+} else {
+    a = Occurrences(t, x);
+    console.log("Table :", t);
+    console.log("the values" , x, "exists", a, "times");
+}
+
+console.log("Try programiz.pro");
