@@ -29,4 +29,3 @@ if (t.length === 0) {
     console.log("the length of the biggest string is : ", resultat);
 }
 
-console.log("Try programiz.pro");
