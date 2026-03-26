@@ -16,6 +16,8 @@ const orders = [
  { id: 3, total: 200 }
 ];
 
+
+
 const OrderAbove100 = orders.filter(checkOrder);
 
 console.log("Result :", OrderAbove100);
