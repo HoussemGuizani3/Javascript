@@ -1,0 +1,22 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Filter orders above 100 
+
+const checkOrder = (orders) => {
+    var item = false ;
+    if (orders.total > 100){
+        item= true;
+    }
+    return item;    
+};
+
+const orders = [
+ { id: 1, total: 80 },
+ { id: 2, total: 120 },
+ { id: 3, total: 200 }
+];
+
+const OrderAbove100 = orders.filter(checkOrder);
+
+console.log("Result :", OrderAbove100);
+
