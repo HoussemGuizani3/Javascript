@@ -2,6 +2,8 @@
 // Write, Edit and Run your Javascript code using JS Online Compiler
 //Filter names starting with A
 
+
+
 const checkName = (users) => {
     var item = false ;
     if (users.name.includes("A")){
@@ -10,11 +12,14 @@ const checkName = (users) => {
     return item;    
 };
 
+
 const users = [
  { name: "Alice" },
  { name: "Bob" },
  { name: "Adam" }
 ];
+
+
 const NamesWithA = users.filter(checkName);
 
 console.log("Result :", NamesWithA);
