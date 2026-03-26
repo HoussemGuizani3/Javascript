@@ -1,0 +1,23 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Filter users with gmail
+
+const checkGmail = (users) => {
+    var item= false ;
+    if (users.email.includes("gmail")){
+        item= true;
+    }
+    return item;    
+    
+};
+
+const users = [
+ { name: "Alice", email: "alice@gmail.com" },
+ { name: "Bob", email: "bob@yahoo.com" },
+ { name: "Charlie", email: "charlie@gmail.com" }
+];
+
+const Gmail = users.filter(checkGmail);
+
+console.log("Result :", Gmail);
+
