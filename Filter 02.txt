@@ -1,0 +1,23 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Filter active users
+
+
+const checkActive = (user) => {
+    var item= false ;
+    if (user.active === true) {
+        item= true;
+    }
+    return item;
+};
+
+const users = [
+ { name: "Alice", active: true },
+ { name: "Bob", active: false },
+ { name: "Charlie", active: true }
+];
+
+const ActiveUsers = users.filter(checkActive);
+
+console.log("Results:", ActiveUsers);
+
