@@ -17,6 +17,8 @@ const users = [
  { name: "Charlie", email: "charlie@gmail.com" }
 ];
 
+
+
 const Gmail = users.filter(checkGmail);
 
 console.log("Result :", Gmail);
