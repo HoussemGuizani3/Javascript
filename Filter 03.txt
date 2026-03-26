@@ -17,6 +17,7 @@ const products = [
 ];
 
 
+
 const Stock = products.filter(checkStock);
 
 console.log("En Stock :", Stock);
