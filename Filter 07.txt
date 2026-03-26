@@ -11,12 +11,15 @@ const checkPriceRange = (products) => {
     return item;    
 };
 
+
 const products = [
  { name: "Item1", price: 30 },
  { name: "Item2", price: 100 },
  { name: "Item3", price: 200 },
  { name: "Item4", price: 75 }
 ];
+
+
 
 const PriceRange = products.filter(checkPriceRange);
 
