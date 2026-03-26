@@ -1,0 +1,33 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Filter users with active subscription
+
+const checkSub = (users) => {
+    var item = false;
+    var t = users.subscriptions;
+    for (var i = 0; i < t.length; i++){
+        if (t[i].active === true){
+            item = true;
+        }
+    }
+    return item;
+};
+
+const users = [
+  {
+    name: "Alice",
+    subscriptions: [{ active: false }, { active: false }]
+  },
+  {
+    name: "Bob",
+    subscriptions: [{ active: true }]
+  },
+  {
+    name: "Charlie",
+    subscriptions: []
+  }
+];
+
+const ActiveSub = users.filter(checkSub);
+console.log("Result :", ActiveSub);
+
