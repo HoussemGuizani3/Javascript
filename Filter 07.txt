@@ -1,0 +1,24 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+//Filter products by price range
+
+const checkPriceRange = (products) => {
+    var item = false ;
+    if (products.price === 100 ||
+        products.price === 75){
+        item= true;
+    }
+    return item;    
+};
+
+const products = [
+ { name: "Item1", price: 30 },
+ { name: "Item2", price: 100 },
+ { name: "Item3", price: 200 },
+ { name: "Item4", price: 75 }
+];
+
+const PriceRange = products.filter(checkPriceRange);
+
+console.log("Result :", PriceRange);
+
