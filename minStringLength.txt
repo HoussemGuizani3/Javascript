@@ -1,0 +1,32 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function minStringLength(t) {
+    var min = t[0].length; 
+    
+    for (var i = 1; i < t.length; i++) {
+        if (t[i].length < min) {
+            min = t[i].length;
+        }
+    }
+    return min;
+}
+
+var n = prompt("The size of the table? ");
+const t = [];
+
+for (var i = 0; i < n; i++) {
+    var ch = prompt("Enter item number n " + (i + 1) + " : ");
+    t.push(ch); 
+}
+
+if (t.length === 0) {
+    console.log("the length of table is zero!");
+} else {
+    var resultat = minStringLength(t);
+    console.log("Table :", t);
+    console.log(" The length of the smallest string is : ", resultat);
+}
+
+console.log("Try programiz.pro");
