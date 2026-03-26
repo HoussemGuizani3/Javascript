@@ -1,0 +1,23 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Filter users with roles
+
+const checkRole = (users) => {
+    var item = false ;
+    var t = users.roles;
+    if (t.length > 0 ){
+        item= true;
+    }
+    return item;    
+};
+
+const users = [
+ { name: "Alice", roles: ["ok"] },
+ { name: "Bob", roles: [] },
+ { name: "Charlie", roles: ["user", "editor"] }
+];
+
+const UsersRole = users.filter(checkRole);
+
+console.log("Result :", UsersRole);
+
