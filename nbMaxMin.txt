@@ -13,6 +13,8 @@ function maximum(x) {
 }
  return max;
 }
+
+
  function minimum(x) {
      var min = x[0];
      for (var i=0; i < x.length; i++){
@@ -33,4 +35,5 @@ function maximum(x) {
        console.log("le nb min dans une chaine est", min);
      
  }
+
  nbMaxMin();
