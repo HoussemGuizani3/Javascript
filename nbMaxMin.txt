@@ -1,0 +1,36 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// https://www.programiz.com/online-compiler/7DnWI6LJL0fAt
+
+
+function maximum(x) {
+    var max = 0;
+    for (var i=0; i < x.length; i++){
+        parseInt("i");
+    if (x[i] > max) {
+        max = x[i];
+    }
+}
+ return max;
+}
+ function minimum(x) {
+     var min = x[0];
+     for (var i=0; i < x.length; i++){
+        parseInt("i");
+    if (x[i] < min) {
+        min = x[i];
+    }
+     }
+     return min;
+     
+ }
+ 
+ function nbMaxMin(){
+     var ch = "2314567";
+     const max = maximum(ch);
+     console.log("le nb max dans une chaine est", max);
+     const min = minimum(ch);
+       console.log("le nb min dans une chaine est", min);
+     
+ }
+ nbMaxMin();
