@@ -1,0 +1,23 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+// Filter products in stock
+
+const checkStock = (product) => {
+    var item= false ;
+    if (product.stock > 0) {
+        item= true;
+    }
+    return item;
+};
+
+const products = [
+ { name: "Laptop", stock: 0 },
+ { name: "Phone", stock: 5 },
+ { name: "Tablet", stock: 2 }
+];
+
+
+const Stock = products.filter(checkStock);
+
+console.log("En Stock :", Stock);
+
