@@ -2,7 +2,7 @@
 // Write, Edit and Run your Javascript code using JS Online Compiler
 // Filter products in stock
 
-const checkStock = (product) => {
+const filterProductWithStock = (product) => {
     var item= false ;
     if (product.stock > 0) {
         item= true;
@@ -18,7 +18,7 @@ const products = [
 
 
 
-const Stock = products.filter(checkStock);
+const stockBigerThanZero = products.filter(filterProductWithStock);
 
-console.log("En Stock :", Stock);
+console.log("En Stock :", stockBigerThanZero);
 
