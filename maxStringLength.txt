@@ -1,0 +1,32 @@
+string// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+function maxStringLength(t) {
+    var max = t[0].length; 
+    
+    for (var i = 1; i < t.length; i++) {
+        if (t[i].length > max) {
+            max = t[i].length;
+        }
+    }
+    return max;
+}
+
+var n = prompt("The size of the table? ");
+const t = [];
+
+for (var i = 0; i < n; i++) {
+    var ch = prompt("Enter item number n " + (i + 1) + " : ");
+    t.push(ch); 
+}
+
+if (t.length === 0) {
+    console.log("the length of table is zero!");
+} else {
+    var resultat = maxStringLength(t);
+    console.log("Table :", t);
+    console.log("the length of the biggest string is : ", resultat);
+}
+
+console.log("Try programiz.pro");
