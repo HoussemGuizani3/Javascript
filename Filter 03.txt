@@ -17,7 +17,6 @@ const products = [
 ];
 
 
-
 const stockBigerThanZero = products.filter(filterProductWithStock);
 
 console.log("En Stock :", stockBigerThanZero);
